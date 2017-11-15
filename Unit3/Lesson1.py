@@ -74,10 +74,10 @@ pattern =re.compile(r"^([a-zA-Z\.]+)\@([a-zA-Z0-9]+)\.([a-zA-Z]{3})$")
 
 print(pattern.match("someone@gmail.com").groups())
 
+
 #提取带名字的； 注意中间可能会有空格
 #<Tom Paris>tom@voyager.org
 pattern =re.compile(r"^\<([a-zA-Z0-9\s]+)\>\s*([a-zA-Z0-9]+)\@([a-zA-Z0-9]+)\.([a-zA-Z]{3})$")
-
 
 if pattern.match("<Tom Paris> tom@voyager.org"):
     print(pattern.match("<Tom Paris> tom@voyager.org").groups())
