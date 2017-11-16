@@ -85,4 +85,7 @@ else:
     print("NOT OK!")
 
 
+event =dict()
+event["ke"]='ff'
+print(event)
 
