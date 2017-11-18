@@ -44,5 +44,8 @@ print("%s%%%s%%"%(r,r))
 
 
 
+l =dict()
+l["sss"]="fff"
+print(l.get('sss'))
 
 

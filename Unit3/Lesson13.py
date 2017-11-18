@@ -103,7 +103,7 @@ from urllib import request
 with request.urlopen('https://www.python.org/events/python-events/') as f:
     data = f.read()
 eventParser =EventHtmlParser()
-eventParser.feed(str(data))
+eventParser.feed(data.decode('utf-8'))
 print(json.dumps(eventParser))
 
 
